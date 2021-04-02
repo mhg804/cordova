@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Hello World</title>
+
+    </head>
+    <body class="body-main">
+        <div class="user"><h3 id="user"></h3></div>
+        <div class="app-input-main">
+            <!-- <h1>Apache Cordova</h1> 
+            <div id="deviceready" class="blink">
+                 <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p> 
+            </div>-->
+            <div class="app-main-container">
+                <div class="input-style" >
+                    <div id="div1" style="width: 33.3%; float: left;">حاضر</div>
+                    <div id="div2" style="width: 33.3%;float: left;">مشغول</div>
+                    <div id="div3" style="width: 33.3%;float: left;">غایب</div>
+                  </div> 
+              <div class="input-style">
+                <input type="range"  class="btnmain" min="0" max="2" id="range"> 
+
+              </div> 
+              <div class="input-style">
+                <input type="button" value="ثبت حضور" class="btnmain" id="btnthere">
+            </div> 
+
+
+            </div>
+        </div>
+        <div id="btnback" style="width: 50px;height: 50px;position: absolute;right: 20px;bottom: 50px;">
+            <svg height="50" width="50">
+                <g>
+                <circle cx="25" cy="25" r="25" stroke="black" stroke-width="1" fill="#494b59" /> 
+               
+              <text x="50%" y="50%"  text-anchor="middle" stroke="#51c5cf" stroke-width="0px" dy=".3em" style="fill: aliceblue;font-size:large;">←</text> 
+            </g>
+        </svg> 
+        </div> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/color.js"></script>
+        <script src="js/registerthere.js"></script>
+
+    </body>
+</html>
